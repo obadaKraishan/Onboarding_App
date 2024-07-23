@@ -1,30 +1,31 @@
-
-# Profile Navigator
-A Flutter application featuring a custom drawer with user profile information, settings, and navigation to various sections of the app. The app supports both light and dark themes.
+# Onboarding App
+A Flutter application featuring an animated splash screen and an onboarding process with steps. The app provides essential information before entering the main interface.
 
 ## 🌟 Features
-- Custom drawer with user profile section
-- Navigation to Dashboard, Analytics, Notifications, Projects, Messages, Wallets, and Settings
-- Light and dark theme toggle
-- Modern and responsive design
+- Animated splash screen
+- Three-step onboarding process
+- Skip button to move directly to the home screen
+- Navigation buttons to move back and forth between steps
+- Visual indicators for onboarding progress
+- Clean and modern design with a professional theme
 
 ## 📸 Screenshots
 <p>
-<img src="assets/homescreens.svg" width="300">
+<img src="assets/mainscreens.svg" width="300">
 </p>
 
 ## 🛠️ Technologies Used
 - **Frontend**: Flutter, Dart
-- **State Management**: Provider
-- **Plugins**: None required
+- **State Management**: StatefulWidget
+- **Plugins**: animations, flutter_svg, page_transition
 
 ## 📝 Setup Instructions
 Follow these steps to set up the project locally:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/obadaKraishan/Profile_Navigator.git
-cd Profile_Navigator
+git clone https://github.com/obadaKraishan/Onboarding_App.git
+cd Onboarding_App
 ```
 
 ### 2. Install Dependencies
@@ -40,53 +41,27 @@ flutter run
 ## 📄 Project Structure
 ```plaintext
 lib/
-├── assets/                  
-│   ├── fonts/               
-│   ├── images/              
-│       └── avatar.png       
-│
-├── constants/               
-│   └── colors.dart          
-│
-├── models/                  
-│   └── user.dart            
-│
-├── screens/                 
-│   ├── analytics_screen.dart
+├── main.dart
+├── screens/
 │   ├── home_screen.dart
-│   ├── messages_screen.dart
-│   ├── notifications_screen.dart
-│   ├── profile_screen.dart
-│   ├── projects_screen.dart
-│   ├── settings_screen.dart
-│   ├── wallets_screen.dart
-│
-├── utils/                   
-│   └── theme_notifier.dart  
-│
-├── widgets/                 
-│   ├── custom_drawer.dart   
-│   ├── drawer_item.dart     
-│   └── user_profile.dart    
-│
-├── main.dart                
-│
-└── routes.dart              
+│   ├── onboarding_screen.dart
+├── widgets/
+│   ├── animated_splash_screen.dart
+│   ├── onboarding_step.dart
 ```
 
 ## 🎨 Customization
 ### 1. Update Theme
-Modify the theme settings in `constants/colors.dart` to customize the app's look and feel.
+Modify the theme settings in `main.dart` to customize the app's look and feel.
 
-### 2. Update Drawer Items
-Adjust the navigation items in `widgets/custom_drawer.dart` to add or remove items as needed.
+### 2. Update Onboarding Steps
+Adjust the steps in `lib/screens/onboarding_screen.dart` to change the content of the onboarding process.
 
-### 3. Add New Screens
-Create new screens in the `screens/` directory and update `routes.dart` to include them in the app's navigation.
+### 3. Add New Features
+Create new features and screens in the `lib/screens/` directory and include them in the app's navigation.
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👥 Contributors
 - [Obada Kraishan](https://github.com/obadaKraishan)
-
