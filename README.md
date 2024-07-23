@@ -11,7 +11,7 @@ A Flutter application featuring an animated splash screen and an onboarding proc
 
 ## 📸 Screenshots
 <p>
-<img src="assets/mainscreens.svg" width="300">
+<img src="assets/mainscreens.gif" width="300">
 </p>
 
 ## 🛠️ Technologies Used
