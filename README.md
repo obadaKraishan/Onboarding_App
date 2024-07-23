@@ -10,8 +10,7 @@ A Flutter application featuring a custom drawer with user profile information, s
 
 ## 📸 Screenshots
 <p>
-<img src="screenshots/dark.png" width="300">
-<img src="screenshots/light.png" width="300">
+<img src="assets/homescreens.svg" width="300">
 </p>
 
 ## 🛠️ Technologies Used
